@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Vdolita",
+    description: 'vdolita site',
+    author: 'Vdolita.org'
   },
   plugins: [
     "gatsby-plugin-styled-components",
