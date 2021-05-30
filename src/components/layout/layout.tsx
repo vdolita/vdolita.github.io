@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { ReactNode } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../header';
-import "./layout.css"
+import './layout.css';
 
 type LayoutProps = {
-    children: ReactNode
-}
+  children: ReactNode;
+};
 
 export default ({ children }: LayoutProps) => {
   const data = useStaticQuery(graphql`
@@ -17,7 +17,7 @@ export default ({ children }: LayoutProps) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -41,5 +41,5 @@ export default ({ children }: LayoutProps) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
