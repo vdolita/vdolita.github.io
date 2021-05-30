@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  ignorePatterns: ['.cache', 'node_modules', 'public', '.eslintrc.js', 'gatsby-config.js', '.husky'],
+  ignorePatterns: ['.cache', 'node_modules', 'public', '.eslintrc.js', 'gatsby-config.js', '.husky', '*.less'],
   extends: [
     'plugin:react/recommended',
     'google',

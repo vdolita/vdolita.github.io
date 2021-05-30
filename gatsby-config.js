@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     title: 'Vdolita',
@@ -15,6 +16,7 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
+    `gatsby-plugin-offline`,
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -34,5 +36,14 @@ module.exports = {
       },
       __key: 'pages',
     },
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        lessOptions: {
+          javascriptEnabled: true,
+          plugins: [],
+        }
+      }
+    }
   ],
 };

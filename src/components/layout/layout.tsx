@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../header';
-import './layout.css';
+import './layout.less';
 
 type LayoutProps = {
   children: ReactNode;
