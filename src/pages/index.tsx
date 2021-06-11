@@ -1,9 +1,14 @@
+import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-export default () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Home page</h1>
-  </Layout>
+const IndexPage = () => (
+  <>
+    <Layout>
+      <Seo title="vdolita" />
+      <h1>Index mes!</h1>
+    </Layout>
+  </>
 );
+
+export default IndexPage;

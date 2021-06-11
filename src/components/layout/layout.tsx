@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Layout, { Content } from 'antd/lib/layout/layout';
 
 import Header from '../header';
