@@ -1,25 +1,51 @@
+const reactRules = {
+  "react/jsx-uses-react": "off",
+  "react/react-in-jsx-scope": "off",
+  'react/prop-types': 'off',
+  'react/require-default-props': 'off',
+};
+
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
   },
-  ignorePatterns: ['.cache', 'node_modules', 'public', '.eslintrc.js', 'gatsby-config.js', '.husky', '*.less'],
+  ignorePatterns: ['.cache', 'node_modules', 'public'],
   extends: [
+    'plugin:css-modules/recommended',
     'plugin:react/recommended',
     'google',
-    'airbnb-typescript',
     'prettier',
   ],
-  parser: '@typescript-eslint/parser',
+  plugins: ['react', 'react-hooks', 'css-modules'],
+  parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    tsconfigRootDir: __dirname,
-    project: './tsconfig.json',
+    ecmaFeatures: { jsx: true },
   },
-  plugins: ['react', '@typescript-eslint'],
+  settings: {
+    react: {
+      version: '>17',
+    },
+  },
   rules: {
-    'react/display-name': 0,
-    'react/prop-types': 'off',
-    'react/require-default-props': 'off',
+    ...reactRules
   },
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'module',
+        project: './tsconfig.json',
+      },
+      extends: [
+        'airbnb-typescript',
+        'prettier',
+      ],
+      rules: {
+        ...reactRules
+      }
+    }
+  ]
 };

@@ -16,7 +16,7 @@
     "deploy": "gatsby build && gh-pages -d public -b main",
     "prepare": "husky install",
     "format": "prettier --write src",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -46,12 +46,13 @@
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "@types/react-helmet": "^6.1.1",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
@@ -64,8 +65,8 @@
   },
   "lint-staged": {
     "**/*": [
-      "npm run format",
-      "npm run lint"
+      "prettier --write",
+      "eslint --fix"
     ]
   }
 }
