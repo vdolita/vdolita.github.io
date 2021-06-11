@@ -6,7 +6,6 @@ const IndexPage = () => (
   <>
     <Layout>
       <Seo title="vdolita" />
-      <h1>Index mes!</h1>
     </Layout>
   </>
 );
