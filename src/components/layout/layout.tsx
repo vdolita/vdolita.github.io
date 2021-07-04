@@ -16,7 +16,7 @@ type LayoutProps = {
 export default ({ children, isShowFooter, isShowHeader }: LayoutProps) => (
   <Layout className={layoutStyles.layout}>
     {isShowHeader && <Header />}
-    <Content>{children}</Content>
+    <Content style={{ width: 660 }}>{children}</Content>
     {isShowFooter && <Footer />}
   </Layout>
 );

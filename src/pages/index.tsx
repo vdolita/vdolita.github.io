@@ -9,11 +9,10 @@ const LinkStyle: React.CSSProperties = {
 };
 
 const IndexPage = () => (
-  <Layout>
+  <Layout isShowHeader>
     <Seo title="vdolita" />
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
