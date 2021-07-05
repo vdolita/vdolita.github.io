@@ -1,12 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-
-const LinkStyle: React.CSSProperties = {
-  fontSize: '40px',
-  color: '#fff',
-  margin: '0 100px',
-};
+import InfoCard from '../components/info-card';
 
 const IndexPage = () => (
   <Layout isShowHeader>
@@ -18,15 +13,7 @@ const IndexPage = () => (
         justifyContent: 'center',
       }}
     >
-      <a style={LinkStyle} href="/artical">
-        杂谈
-      </a>
-      <a style={LinkStyle} href="/novel">
-        小说
-      </a>
-      <a style={LinkStyle} href="/artical">
-        奇物
-      </a>
+      <InfoCard />
     </div>
   </Layout>
 );
