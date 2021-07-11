@@ -34,28 +34,19 @@ export default () => {
       <a
         className={Styles.mynav}
         style={{
-          color: path === '/artical' ? '#1890ff' : undefined,
+          color: path === '/blog' ? '#1890ff' : undefined,
         }}
-        href="novel"
+        href="blog"
       >
         杂谈
       </a>
-      <a
+      {/* <a
         className={Styles.mynav}
         style={{ color: path === '/others' ? '#1890ff' : undefined }}
         href="novel"
       >
         奇物
-      </a>
-      {/* <iframe
-        title="music"
-        frameBorder="no"
-        marginWidth={0}
-        marginHeight={0}
-        width={298}
-        height={52}
-        src="//music.163.com/outchain/player?type=2&id=419594624&auto=0&height=32"
-      /> */}
+      </a> */}
     </Header>
   );
 };

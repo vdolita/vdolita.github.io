@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import InfoCard from '../components/info-card';
 
 const IndexPage = () => (
   <Layout isShowHeader>
@@ -12,9 +11,7 @@ const IndexPage = () => (
         alignItems: 'center',
         justifyContent: 'center',
       }}
-    >
-      <InfoCard />
-    </div>
+    />
   </Layout>
 );
 
