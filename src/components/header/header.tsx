@@ -20,7 +20,7 @@ export default () => {
       <a
         className={Styles.mynav}
         style={{ color: path === '/' ? '#1890ff' : undefined }}
-        href="novel"
+        href="/"
       >
         主页
       </a>
